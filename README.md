@@ -3,6 +3,7 @@
 multiple servos via the GPIO pins
 to face tracking 
 ## Installation Python Libraries:
+* Python3.5
 * Picamera -[[Installation]](https://picamera.readthedocs.io/en/release-1.13/install.html)
 * OpenVINO
 * Numpy
