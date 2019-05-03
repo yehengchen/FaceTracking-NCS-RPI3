@@ -8,27 +8,21 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 import multiprocessing as mp
 import os
+
 #hacked from:
 #https://software.intel.com/articles/OpenVINO-Install-RaspberryPI
-#https://opencv2-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html
-#https://github.com/PINTO0309/MobileNet-SSD-RealSense/blob/master/SingleStickSSDwithUSBCamera_OpenVINO_NCS2.py
-#https://raspberrypi.stackexchange.com/questions/87062/overhead-counter
-
-#Les Wright Dec 24 2018
-
-#Note cv2.dnn.blobFromImage, the size is present in the XML files, write a preamble to go get that data,
-#Then we dont have to explicitly set it!
-
 
 # Load the model
 net = cv2.dnn.readNet('models/face-detection-retail-0004.xml', 'models/face-detection-retail-0004.bin')
 
-# age
+'''
+# Load the age age-gender-recognition model
 model_path = "models/age-gender-recognition-retail-0013.xml"
 pbtxt_path = "models/age-gender-recognition-retail-0013.bin"
 net1 = cv2.dnn.readNet(model_path, pbtxt_path)
 #face_cascade = cv2.CascadeClassifier('models/haarcascade_frontalface_default.xml')
 net1.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
+'''
 
 # Specify target device
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
