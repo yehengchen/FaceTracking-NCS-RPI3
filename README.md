@@ -1,5 +1,5 @@
 # Pan/tilt face tracking with a Raspberry Pi + NCS
-This project using the NCS with openvino and ServoBlaster to drive
+*This project using the NCS with openvino and ServoBlaster to drive*
 multiple servos via the GPIO pins
 to face tracking 
 ## Installation Python Libraries:
