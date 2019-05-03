@@ -220,7 +220,8 @@ for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=
 	# Display the resulting frame
 	cv2.namedWindow('frame',cv2.WINDOW_NORMAL)
 	cv2.resizeWindow('frame',frameWidth,frameHeight)
-	cv2.imshow('frame',frame)
+	newframe = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
+	cv2.imshow('frame',newframe)
 	rawCapture.truncate(0)
 
 	frames+=1
