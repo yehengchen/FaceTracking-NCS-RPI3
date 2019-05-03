@@ -60,7 +60,8 @@ xdeg = 130
 ydeg = 170
 
 videopath = ("/home/pi/workspace/RPi3_NCS2/home/pi/workspace/RPi3_NCS2/car_test_video.avi")
-#picamera
+
+#picam
 camera = PiCamera()
 camera.rotation = 180
 camera.resolution = (320,240)
@@ -71,7 +72,7 @@ rawCapture = PiRGBArray(camera, size=(320,240))
 time.sleep(0.1)
 
 """
-#Specify a camera
+#USBcam
 cap = cv2.VideoCapture(0)
 
 #Get the camera data:
@@ -123,9 +124,10 @@ p.start()
 print("[INFO] starting capture...")
 face_count = 0
 for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=True):
-#while(True):
+#while(True):#USBcam
 	# Capture frame-by-frame
 	#ret, frame = cap.read()
+	#picam
 	frame = frame.array
 	# if the input queue *is* empty, give the current frame to
 	# classify
@@ -150,7 +152,6 @@ for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=
 			xmax = int(detection[5] * frame.shape[1])
 			ymax = int(detection[6] * frame.shape[0])
 
-
 			if confidence > 0.5:
 				face_count += 1
 				print(face_count)
@@ -164,7 +165,7 @@ for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=
 				cv2.putText(frame,'Face'+ str(face_count) +':' + str(round(confidence,2)),\
 				(xmin,ymin-2), font, 0.3,(0,0,0),1,cv2.LINE_AA)
 				
-				#motor
+				#ServoBlaster
 				tx = (xmin + xmax)/2
 				ty = (ymin + ymax)/2
 				
@@ -183,6 +184,7 @@ for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=
 					ydeg += 2 
 					os.system( "echo 1=" + str( ydeg ) + " > /dev/servoblaster" )
 				'''
+				#age-sex
 				if((xmax-xmin)>0 and (ymax-ymin)>0):
 					facearea = frame[ymin:ymax, xmin:xmax]
 					#print(facearea)
