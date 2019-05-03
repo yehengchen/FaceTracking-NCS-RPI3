@@ -26,6 +26,10 @@ to face tracking
 * #### The following steps will be covered:[[guide]](https://github.com/yehengchen/NCS2-OpenVINO)
 *This guide provides step-by-step instructions on how to install the OpenVINO™ toolkit for Raspbian* OS*
 
+### To test your OpenVINO, open a new terminal. You will see the following:
+        
+    [setupvars.sh] OpenVINO environment initialized
+
 ## Getting Started:
 ### Install and start multiple servos:
     git clone git@github.com:yehengchen/FaceTracking-RPI3-NCS.git
