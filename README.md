@@ -23,7 +23,7 @@ to face tracking
 * #### Run this script [./Install_openvino.sh](https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/Install_openvino.sh)
 *This script provides all instructions on install the OpenVINO™ toolkit package for Raspbian* OS*
 ### METHOD 2:
-* #### The following steps will be covered:[[guide]](https://github.com/yehengchen/NCS2-OpenVINO)
+* #### The following steps will be covered: [[guide]](https://github.com/yehengchen/NCS2-OpenVINO)
 *This guide provides step-by-step instructions on how to install the OpenVINO™ toolkit for Raspbian* OS*
 
 ### To test your OpenVINO, open a new terminal. You will see the following:
