@@ -3,6 +3,9 @@
 multiple servos via the GPIO pins
 to face tracking
 ### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)
+
+<img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/facetracking.png" width="50%" height="50%">
+
 ## Installation Python Libraries:
 * Python 3.5
 * Picamera
