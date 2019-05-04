@@ -2,7 +2,7 @@
 *This project using the NCS with openvino and ServoBlaster to drive*
 multiple servos via the GPIO pins
 to face tracking
-### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU). 
+### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)
 ## Installation Python Libraries:
 * Python 3.5
 * Picamera
