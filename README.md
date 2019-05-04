@@ -1,14 +1,13 @@
 # Pan/tilt face tracking with a Raspberry Pi + NCS
 *This project using the NCS with openvino and ServoBlaster to drive*
 multiple servos via the GPIO pins
-to face tracking 
+to face tracking
+### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU). 
 ## Installation Python Libraries:
 * Python 3.5
 * Picamera
 * OpenVINO
 * Numpy
-
-*Picamera -[[Installation]](https://picamera.readthedocs.io/en/release-1.13/install.html)*
 
 ## Things needed:
 * A raspberry pi 3B
