@@ -14,7 +14,7 @@ to face tracking
 
 ## Things needed:
 * A raspberry pi 3B
-* A Neural Compute Stick - (NCS1/2)
+* A Intel® Neural Compute Stick - (NCS1/2)
 * A pan/tilt bracket - ([3D printer](https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/ProfileBlock_SUCPT_CamMount_28.5mm.gcode))
 * Two Servos - (SG90)
 * A GPIO expansion board
