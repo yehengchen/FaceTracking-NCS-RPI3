@@ -20,6 +20,8 @@ to face tracking
 * A GPIO expansion board
 * Pi Camera or USB Webcam
 
+<img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/3Dprint.png" width="32%" height="32%">
+
 ## Install the OpenVINO™ Toolkit for Raspbian* OS Package
 ### METHOD 1:
 * #### Run this script [./Install_openvino.sh](https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/Install_openvino.sh)
