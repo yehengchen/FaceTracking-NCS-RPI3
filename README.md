@@ -2,7 +2,7 @@
 *This project using the NCS with openvino and ServoBlaster to drive*
 multiple servos via the GPIO pins
 to face tracking
-### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)
+### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)  [[Bilibili]](https://www.bilibili.com/video/av51621554/)
 
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/b4lvt-8lfrb.gif" width="50%" height="50%">
 
