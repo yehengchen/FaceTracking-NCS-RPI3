@@ -24,7 +24,7 @@ to face tracking
 
 *Pan-and-tilt bracket: ProfileBlock_SUCPT_CamMount_28.5mm.gcode*
 
-<img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900-1024x341.png" width="70%" height="70%">
+<img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900-1024x341.png" width="60%" height="60%">
     
 __[GPIO 4 -> PanMotor] [GPIO 17 -> TiltMotor]__
     
