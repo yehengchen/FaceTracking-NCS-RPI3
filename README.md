@@ -24,6 +24,24 @@ to face tracking
 
 *Pan-and-tilt bracket: ProfileBlock_SUCPT_CamMount_28.5mm.gcode*
 
+<img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900-1024x341.png" width="70%" height="70%">
+    
+__[GPIO 4 -> PanMotor] [GPIO 17 -> TiltMotor]__
+    
+The code defaults to driving 8 servos, the control signals of which should be
+connected to P1 header pins as follows:
+
+    Servo number    GPIO number   Pin in P1 header   Pan-Tilt Motor
+          0               4             P1-7           Pan-Motor
+          1              17             P1-11          Tilt-Motor
+          2              18             P1-12
+          3             21/27           P1-13
+          4              22             P1-15
+          5              23             P1-16
+          6              24             P1-18
+          7              25             P1-22
+
+
 ## Install the OpenVINO™ Toolkit for Raspbian* OS Package
 ### METHOD 1:
 * #### Run this script [./Install_openvino.sh](https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/Install_openvino.sh)
