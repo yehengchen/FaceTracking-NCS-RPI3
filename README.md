@@ -41,6 +41,7 @@ connected to P1 header pins as follows:
           6              24             P1-18
           7              25             P1-22
 
+***
 
 ## Install the OpenVINO™ Toolkit for Raspbian* OS Package
 ### METHOD 1:
