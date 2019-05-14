@@ -178,7 +178,7 @@ for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=
 					ydeg += 2 
 					os.system( "echo 1=" + str( ydeg ) + " > /dev/servoblaster" )
 				'''
-				#age-sex
+				#age
 				if((xmax-xmin)>0 and (ymax-ymin)>0):
 					facearea = frame[ymin:ymax, xmin:xmax]
 					#print(facearea)
