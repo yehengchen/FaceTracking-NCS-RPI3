@@ -20,6 +20,8 @@ to face tracking
 * A GPIO expansion board
 * Pi Camera or USB Webcam
 
+FaceDetection model: face-detection-retail-0004.bin
+
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/3Dprint.png" width="32%" height="32%">
 
 *Pan-and-tilt bracket: ProfileBlock_SUCPT_CamMount_28.5mm.gcode*
