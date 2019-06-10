@@ -21,15 +21,7 @@ to face tracking
 * Pi Camera or USB Webcam
 
 ***
-<img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/workflow_steps.png" width="50%" height="50%">
 
-#### FaceDetection model (IR) [./models](https://github.com/yehengchen/FaceTracking-NCS-RPI3/tree/master/models): 
-* Network - face-detection-retail-0004.bin
-* Weights - face-detection-retail-0004.xml
-
-*Face detector based on SqueezeNet light (half-channels) as a backbone with a single SSD for indoor/outdoor scenes shot by a front-facing camera.*
-
-***
 ### Pan/Tilt bracket
 
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/3Dprint.png" width="32%" height="32%">
@@ -57,6 +49,14 @@ connected to P1 header pins as follows:
 ***
 
 ## Install the OpenVINO™ Toolkit for Raspbian* OS Package
+<img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/workflow_steps.png" width="50%" height="50%">
+
+#### FaceDetection model (IR) [./models](https://github.com/yehengchen/FaceTracking-NCS-RPI3/tree/master/models): 
+* Network - face-detection-retail-0004.bin
+* Weights - face-detection-retail-0004.xml
+
+*Face detector based on SqueezeNet light (half-channels) as a backbone with a single SSD for indoor/outdoor scenes shot by a front-facing camera.*
+
 ### METHOD 1:
 * #### Run this script [./Install_openvino.sh](https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/Install_openvino.sh)
 *This script provides all instructions on install the OpenVINO™ toolkit package for Raspbian* OS*
