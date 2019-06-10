@@ -15,16 +15,27 @@ to face tracking
 ## Things needed:
 * A raspberry pi 3B
 * A Intel® Neural Compute Stick - (NCS1/2)
-* A pan/tilt bracket - ([3D printer](https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/ProfileBlock_SUCPT_CamMount_28.5mm.gcode))
+* A pan/tilt bracket - ([3D printer](https://github.com/yehengchen/FaceTracking-NCS-RPI3/tree/master/3D_printer))
 * Two Servos - (SG90)
 * A GPIO expansion board
 * Pi Camera or USB Webcam
 
-FaceDetection model: face-detection-retail-0004.bin
+***
+<img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/workflow_steps.png" width="50%" height="50%">
+
+#### FaceDetection model (IR) [./models](https://github.com/yehengchen/FaceTracking-NCS-RPI3/tree/master/models): 
+* Network - face-detection-retail-0004.bin
+* Weights - face-detection-retail-0004.xml
+
+*Face detector based on SqueezeNet light (half-channels) as a backbone with a single SSD for indoor/outdoor scenes shot by a front-facing camera.*
+
+***
+### Pan/Tilt bracket
 
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/3Dprint.png" width="32%" height="32%">
 
-*Pan-and-tilt bracket: ProfileBlock_SUCPT_CamMount_28.5mm.gcode*
+
+*Pan-and-tilt bracket - ([3D printer](https://github.com/yehengchen/FaceTracking-NCS-RPI3/tree/master/3D_printer))*
 
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900-1024x341.png" width="60%" height="60%">
     
