@@ -1,1 +1,2 @@
 *.c linguist-language=python
+*.gcode linguist-language=python
