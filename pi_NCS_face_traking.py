@@ -9,10 +9,7 @@ from picamera import PiCamera
 import multiprocessing as mp
 import os
 
-#hacked from:
-#https://software.intel.com/articles/OpenVINO-Install-RaspberryPI
-
-# Load the model
+# Load the face detection model
 net = cv2.dnn.readNet('models/face-detection-retail-0004.xml', 'models/face-detection-retail-0004.bin')
 
 '''
@@ -27,7 +24,7 @@ net1.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
 # Specify target device
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
 
-#Misc vars
+# Misc vars
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 frameWidth = 320
@@ -46,27 +43,29 @@ resY = 240
  
 cx = resX / 2
 cy = resY / 2
- 
+
+# Servo_init
 os.system( "echo 0=130 > /dev/servoblaster" )
 os.system( "echo 1=170 > /dev/servoblaster" )
  
 xdeg = 130
 ydeg = 170
 
-videopath = ("/home/pi/workspace/RPi3_NCS2/home/pi/workspace/RPi3_NCS2/car_test_video.avi")
+# Test Video path
+#videopath = ("/home/pi/workspace/RPi3_NCS2/home/pi/workspace/RPi3_NCS2/car_test_video.avi")
 
-#picam
+# Picam
 camera = PiCamera()
 camera.rotation = 180
 camera.resolution = (320,240)
 camera.framerate = 35
 rawCapture = PiRGBArray(camera, size=(320,240)) 
 
-# allow the camera to warmup
+# Allow the camera to warmup
 time.sleep(0.1)
 
 """
-#USBcam
+# USBcam
 cap = cv2.VideoCapture(0)
 
 #Get the camera data:
@@ -117,11 +116,13 @@ p.start()
 
 print("[INFO] starting capture...")
 face_count = 0
+
 for frame in camera.capture_continuous(rawCapture, format="rgb", use_video_port=True):
 #while(True):#USBcam
 	# Capture frame-by-frame
 	#ret, frame = cap.read()
-	#picam
+	
+	#Picam
 	frame = frame.array
 	# if the input queue *is* empty, give the current frame to
 	# classify
@@ -235,8 +236,6 @@ end = time.time()
 seconds = end-start
 fps = frames/seconds
 print("Avg Frames Per Sec: "+str(fps))
-
-
 
 # When everything done, release the capture
 #cap.release()
