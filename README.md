@@ -74,11 +74,11 @@ connected to P1 header pins as follows:
     cd FaceTracking-RPI3-NCS/ServoBlaster/user
     sudo ./servod
     
-### Testing multiple servos:
+### Multiple servos testing:
     echo 0=+10 > /dev/servoblaster
     echo 1=+10 > /dev/servoblaster
 
-### Testing Picamera:
+### Picamera testing:
     raspistill -o image.jpg
 
 ### Run face tracking:
