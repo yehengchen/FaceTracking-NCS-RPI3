@@ -11,6 +11,7 @@ to face tracking
 * Picamera
 * OpenVINO
 * Numpy
+* OpenCV
 
 ## Things needed:
 * A raspberry pi 3B
