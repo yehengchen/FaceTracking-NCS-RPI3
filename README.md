@@ -2,10 +2,10 @@
 *This project using the NCS with openvino and ServoBlaster to drive*
 multiple servos via the GPIO pins
 to face tracking
-### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)  [[Bilibili]](https://www.bilibili.com/video/av51621554/)
 
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/b4lvt-8lfrb.gif" width="50%" height="50%">
 
+### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)  [[Bilibili]](https://www.bilibili.com/video/av51621554/)
 ## Installation Python Libraries:
 * Python 3.5
 * Picamera
@@ -68,6 +68,8 @@ connected to P1 header pins as follows:
 ### To test your OpenVINO, open a new terminal. You will see the following:
         
     [setupvars.sh] OpenVINO environment initialized
+
+<img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/NCS.png" width="=70%" height="70%">
 
 ## Getting Started:
 ### Install and start multiple servos:
