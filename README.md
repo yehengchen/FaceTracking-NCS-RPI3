@@ -68,6 +68,7 @@ connected to P1 header pins as follows:
 ### To test your OpenVINO, open a new terminal. You will see the following:
         
     [setupvars.sh] OpenVINO environment initialized
+***
 
 <img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/NCS.png" width="=70%" height="70%">
 
