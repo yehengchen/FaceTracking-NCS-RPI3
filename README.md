@@ -70,7 +70,7 @@ connected to P1 header pins as follows:
     [setupvars.sh] OpenVINO environment initialized
 ***
 
-<img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/NCS.png" width="=50%" height="50%">
+<img src="https://github.com/yehengchen/FaceTracking-NCS-RPI3/blob/master/img/NCS.png" width="=30%" height="30%">
 
 ## Getting Started:
 ### Install and start multiple servos:
