@@ -5,7 +5,7 @@ to face tracking
 
 <img src="https://github.com/yehengchen/FaceTracking-RPI3-NCS/blob/master/img/b4lvt-8lfrb.gif" width="50%" height="50%">
 
-### Demo video is shown [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)  [[Bilibili]](https://www.bilibili.com/video/av51621554/)
+#### Demo [[YouTube]](https://www.youtube.com/watch?v=n2YM4_2WDlU)  [[Bilibili]](https://www.bilibili.com/video/av51621554/)
 ## Installation Python Libraries:
 * Python 3.5
 * Picamera
